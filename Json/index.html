@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/local-store.js"></script>
+    <script type="text/javascript" src="js/local-storage-ejercicio.js"></script>
+    <style>
+        table, tr, th, td{
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+    <title>Curso de JS</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h1>Añadir peliculas</h1>
+    <form id="formPeliculas" onsubmit="return false">
+        <label for="titlePelicula">Titulo: <input type="text" id="titlePelicula"></label>
+        <br>
+        <label for="yearPelicula">Año: <input type="number" id="yearPelicula"></label>
+        <br>
+        <label for="countryPelicula">Pais: <input type="text" id="countryPelicula"></label>
+        <br>
+        <button type="submit">Guardar</button>
+    </form>
+
+
+    <h2>Peliculas</h2>
+    <div id="content">
+        <table id="movies" style="border-collapse: collapse; width: 100%;">
+            <tr style="border: 1px solid #ccc;">
+                <th>Titulo</th>
+                <th>Año</th>
+                <th>Pais</th>
+            </tr>
+            
+        </table>
+    </div>
+    <script type="text/javascript" src="js/local-store.js"></script>
+    <script type="text/javascript" src="js/local-storage-ejercicio.js"></script>
+</body>
+</html>
